@@ -4,33 +4,47 @@
 
 ![RabbitMQ Logo](assets/img/RabbitMQ-logo.svg)
 
-`rabbitmq` `messages` `queue` `node-email`
+`rabbitmq` `messages` `queue` `sendmail`
 
 ---
 
 ## Setup ##
 
-### Install RabbitMQ Server ##
+#### Install RabbitMQ Server ####
 
 ```shell
 host:~# apt install -y rabbitmq-server/xenial-updates
 ```
 
-### Download sources ###
+#### Download sources ####
 
 ```shell
 $ git clone https://github.com/Voodoo-Crew/rabbitmq-messaging.git && cd rabbitmq-messaging
 ```
 
-### Install dependencies ###
+#### Install dependencies ####
 ```shell
 $ npm i
 ```
 
 ## Run ##
+
 ```shell
-$ npm run worker  # Start worker script
-$ npm run sender  # Send default message or passed as command-line parameter
+# Start worker script
+$ node worker.js
+
+# Send default message
+$ node producer.js
+
+# Send message passed from command line
+$ node producer.js "Message from command line"
+```
+
+## NPM shorthands ##
+
+```shell
+$ npm run worker
+$ npm run producer
 ```
 
 ---
