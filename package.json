@@ -1,0 +1,41 @@
+{   "name":           "rabbitmq-messaging"
+  , "version":        "0.0.1"
+  , "title":          "RabbitMQ Simple Messaging"
+  , "description":    "RabbitMQ Simple Messaging Example"
+  , "readmeFilename": "README.md"
+  , "author": {
+        "name":  "Baltrushaitis Tomas"
+      , "url":   "https://github.com/tbaltrushaitis"
+      , "email": "tbaltrushaitis@gmail.com"
+    }
+  , "keywords": [
+        "rabbitmq"
+      , "Rabbit MQ"
+      , "rsmq"
+    ]
+  , "github": "https://github.com/Voodoo-Crew/rabbitmq-messaging"
+  , "repository": {
+        "type": "git"
+      , "url":  "git+https://github.com/Voodoo-Crew/rabbitmq-messaging.git"
+    }
+  , "bugs": {
+      "url": "https://github.com/Voodoo-Crew/rabbitmq-messaging/wiki"
+    }
+  , "license": "MIT"
+  , "main":    "node worker.js"
+  , "scripts": {
+        "start": "node worker.js"
+      , "worker": "node worker.js"
+      , "producer": "node producer.js"
+    }
+  , "engines": {
+      "node": ">=6.11.0"
+    }
+  , "private": true
+  , "dependencies": {
+        "amqplib":    "^0.5.2"
+      , "sendmail":   "^1.2.0"
+    }
+  , "devDependencies": {
+    }
+}

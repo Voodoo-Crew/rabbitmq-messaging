@@ -1,0 +1,21 @@
+{   "mq": {
+        "name": "mq-001"
+      , "host": "amqp://localhost"
+      , "opts": {"durable": false}
+      , "ack_timeout": 1000
+      , "consumer_opts": {"noAck": false}
+      , "producer_opts": {"persistent": true}
+    }
+  , "email": {
+        "from":    "Job Offer Observer <node.js@localhost>"
+      , "to":      "David Vonka <david.vonka@gmail.com>"
+      , "replyTo": "Baltrushaitis Tomas <tbaltrushaitis@gmail.com>"
+      , "subject": "✔ Hi !"
+      , "html":    "<span>Default Message</span>"
+    }
+  , "iopts": {
+        "showHidden": false
+      , "depth":      4
+      , "colors":     true
+    }
+}
