@@ -65,7 +65,7 @@ host:~# /etc/init.d/rabbitmq-server status
 host:~# systemctl status rabbitmq-server.service
 ```
 
-<details>
+<details open>
 <summary>Screenshot</summary>
 
 <div align="center">
